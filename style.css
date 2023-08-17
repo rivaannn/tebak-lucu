@@ -1,0 +1,174 @@
+body {
+  background: linear-gradient(135deg, #e3eaf5, #f5e1e5);
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.title {
+  font-weight: 600;
+  color: #333;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.aesthetic-card {
+  border-radius: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.aesthetic-card:hover {
+  transform: translateY(-10px);
+}
+
+.question-title,
+.answer-text {
+  color: #5a5a5a;
+}
+
+.question-text {
+  font-size: 1.2rem;
+  color: #8a8a8a;
+}
+
+.aesthetic-btn {
+  background-color: #7367f0;
+  color: #fff;
+  border-radius: 50px;
+  border: none;
+  padding: 10px 30px;
+  transition: all 0.3s;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.aesthetic-btn:last-child {
+  margin-right: 0;
+}
+
+.aesthetic-btn:hover {
+  background-color: #5a48d8;
+  color: #fff;
+  box-shadow: 0 5px 15px rgba(115, 103, 240, 0.2);
+}
+
+.card-title.question-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #333;
+  text-align: center;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 1s ease-in-out;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 40px;
+}
+
+.btn {
+  width: 100%;
+  text-align: center;
+}
+
+.custom-btn {
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 50px;
+  padding: 10px 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.custom-btn:hover {
+  box-shadow: 0 6px 15px rgba(115, 103, 240, 0.2);
+  transform: translateY(-3px);
+}
+
+.custom-btn:active {
+  transform: translateY(1px);
+  box-shadow: 0 3px 8px rgba(115, 103, 240, 0.2);
+}
+
+/* footer buat didalam */
+.tombol-copyright {
+  background-color: #7367f0;
+  color: #fff;
+  border-radius: 50px;
+  border: none;
+  padding: 10px 30px;
+  font-weight: 600; /* tambahkan font-weight agar teks tampak lebih bold */
+  cursor: pointer; /* Tambahkan cursor sebagai pointer untuk memberi tahu user bahwa ini bisa diklik */
+  transition: all 0.3s ease-in-out; /* menambahkan transisi untuk efek halus saat dihover */
+  text-align: center; /* agar teks berada di tengah */
+  text-decoration: none;
+  display: inline-block; /* memastikan bahwa styling tombol diterapkan dengan benar */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* memberikan bayangan sedikit untuk efek "lifted" */
+}
+
+.tombol-copyright:hover {
+  background-color: #5a48d8;
+  box-shadow: 0 6px 15px rgba(115, 103, 240, 0.2); /* bayangan yang lebih besar saat dihover */
+  transform: translateY(-3px); /* memberikan efek "lifted" saat dihover */
+}
+
+.tombol-copyright:active {
+  transform: translateY(1px); /* memberikan efek "pressed down" saat diklik */
+  box-shadow: 0 3px 8px rgba(115, 103, 240, 0.2);
+}
+
+/* Untuk Mobile */
+@media (max-width: 767px) {
+  .title {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+  .aesthetic-card {
+    margin: 0 20px;
+    padding: 20px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  .card-body {
+    padding: 20px;
+  }
+  .question-text {
+    font-size: 0.9rem;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .btn {
+    margin-bottom: 10px;
+  }
+  .aesthetic-btn {
+    padding: 10px 20px;
+  }
+}
